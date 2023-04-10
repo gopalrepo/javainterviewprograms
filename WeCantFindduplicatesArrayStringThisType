@@ -1,0 +1,12 @@
+   String strA[]= {"Test Stringftjjffjf"}; // we can find 
+	    
+		Arrays.asList(strA);
+		 System.out.println(strA);
+		 TreeSet<String> treeSet= new <String>TreeSet();
+			for(String tts:strA) {
+			if(!treeSet.add(tts)) {
+				System.out.println("duplicate entry "+tts);
+				
+		}
+			System.out.println(treeSet);
+			}}     
