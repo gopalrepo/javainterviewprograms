@@ -1,0 +1,29 @@
+import java.util.Arrays;
+import java.util.TreeSet;
+
+public class StringMaxTwoCharactersFindDuplicates {
+	
+	public static void main(String args[]) { // we cant find duplicates in string array easy
+		String str= "Test Stringftjjffjf";
+		
+		int l =str.length();
+	 //only for 2 times repeated 
+	      char string[]=str.toCharArray();
+	      Arrays.sort(string);
+	      System.out.println(string);
+	      String sortedStr=new String(string);
+	      for( int i=0;i<l;i++)
+	      {
+	    	  int count=1;
+	    	  while(i<l-1&&string[i]==string[i+1])
+	    	  {
+	    		  count++;
+	    		  i++;
+	    	  }
+	    	  if(count>1) {
+	    		  System.out.println("duplicate character  is "+string[i]+" count = "+count +" Times");
+	    		  
+	    	  }
+	      }
+        
+        
