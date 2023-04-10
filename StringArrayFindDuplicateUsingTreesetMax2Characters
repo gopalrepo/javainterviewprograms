@@ -1,0 +1,26 @@
+
+public class StringArrayFindDuplicateUsingTreeset {
+
+	public static void main(String[]args) {
+		
+		String str []= {"g","o","p","a","l","a","A","a","p"}; 
+		
+		
+		int count =0;
+		//String strarray[]=new String[] {str}; string to string array 
+		System.out.println(str);          // we cant print array
+		System.out.println(Arrays.toString(str)); 
+		TreeSet<String> treeSet= new <String>TreeSet();
+		for(String tts:str) {
+		if(!treeSet.add(tts)) {
+			System.out.println("duplicate entry "+tts);
+			
+			count++;
+		}
+		}
+		System.out.println("duplicate entry count  "+count);
+		System.out.println("Treeset = "+treeSet);
+	}
+	
+	
+}
