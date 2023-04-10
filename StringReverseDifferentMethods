@@ -1,0 +1,33 @@
+public class Stringrev {
+
+	
+	public static void usingBuffer( String gi) {
+	//String gi="Gopal";
+	StringBuffer gv = new StringBuffer();
+	gv.append(gi);
+	StringBuffer gv1=new StringBuffer("go");
+	System.out.println(gv.reverse());
+	}
+	
+	public void ownLogic (String gi) {
+		//String gi="Gopal";	
+	char[] cha = gi.toCharArray();
+	String reverse = "";
+	for (int i=cha.length-1;i>=0;i--) {
+		reverse=reverse+cha[i]; }      
+	System.out.println(reverse);
+	}
+	
+	public static void usingCollections(String gi) {
+	char[] array = gi.toCharArray();
+	List<Character> list = new ArrayList();
+	for(Character character: array) {
+		list.add(character);
+	}
+	//System.out.print(Collections.reverse(list));
+	Collections.reverse(list);
+	ListIterator iterator =list.listIterator();
+	while(iterator.hasNext())
+	{
+	System.out.println(iterator.next());}
+	}
