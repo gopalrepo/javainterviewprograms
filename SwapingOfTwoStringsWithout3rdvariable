@@ -20,7 +20,7 @@ public class SwapingOfTwoStrings {
 	        s1 = s1.substring(s2.length());  
 	          
 	        System.out.println("Strings after swapping: " + s1 + " " + s2);  
-		System.out.println("two strung swaped sucessfully");
+		System.out.println("two strung swaped sucessfullrry");
 		
 		}
 	}
