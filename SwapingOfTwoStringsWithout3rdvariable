@@ -21,7 +21,9 @@ public class SwapingOfTwoStrings {
 	          
 	        System.out.println("Strings after swapping: " + s1 + " " + s2);  
 		System.out.println("two strung swaped sucessfully");
-			System.out.println("two strung swaped sucessfully");
+
+	
+
 		}
 	}
 	
